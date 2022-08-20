@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+main {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sedans,
+.suvs,
+.luxury {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px;
+    height: 400px;
+    width: 300px;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+img {
+    width: 50px;
+    height: 30px;
+}
+
+main h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    padding: 30px 0;
+    font-size: 35px;
+}
+
+main p {
+    color: hsla(0, 0%, 100%, 0.4);
+    width: 220px;
+    font-family: 'Lexend Deca', sans-serif;
+    padding-bottom: 50px;
+    line-height: 1.4em;
+}
+
+
+.learnmore {
+    width: 140px;
+    height: 55px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    background-color: white;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.sedans span {
+    color: hsl(31, 77%, 52%);
+    font-size: 18px;
+}
+
+.suvs span {
+    color: hsl(184, 100%, 22%);
+    font-size: 18px;
+}
+
+.luxury span {
+    color: hsl(179, 100%, 13%);
+    font-size: 18px;
+}
+
+.learnmore:hover {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+
+}
+
+.sedans span:hover {
+    color: white;
+    font-size: 18px;
+}
+
+.suvs span:hover {
+    color: white;
+    font-size: 18px;
+}
+
+.luxury span:hover {
+    color: white;
+    font-size: 18px;
+}
